@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: just-alpine
+  name: just-alpine
+  namespace: tmp
+spec:
+  containers:
+  - image: just-alpine # most probably you'll need to update it to the link of the image in your private registry
+    name: just-alpine
+    resources: {}
+  restartPolicy: OnFailure
+status: {}

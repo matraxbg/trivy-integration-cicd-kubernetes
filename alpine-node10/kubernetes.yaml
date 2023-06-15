@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: alpine-node10
+  name: alpine-node10 
+  namespace: tmp
+spec:
+  containers:
+  - image: alpine-node10 # most probably you'll need to update it to the link of the image in your private registry
+    name: alpine-node10
+    resources: {}
+  restartPolicy: OnFailure
+status: {}
